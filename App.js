@@ -35,9 +35,6 @@ export default class App extends Component {
         <Tab.Navigator
           tabBarOptions={{
             style: styles.tabBar,
-            borderTopLeftRadius: 30,
-            borderTopRightRadius: 30,
-            marginTop: -40,
           }}
         >
           <Tab.Screen
@@ -145,12 +142,12 @@ export default class App extends Component {
 const styles = EStyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#EDECD5",
     alignItems: "center",
     justifyContent: "center",
   },
   tabBar: {
-    borderTopColor: "transparent",
+    borderTopColor: "#959797",
     width: "100%",
     height: "auto",
     aspectRatio: 6.1 / 1.35,
