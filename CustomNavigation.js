@@ -8,7 +8,7 @@ import Orientation from "react-native-orientation";
 import ReflectionScreen from "./src/screens/ReflectionScreen";
 import DailyCheckinScreen from "./src/screens/DailyCheckinScreen";
 import AddTriggerScreen from "./src/screens/AddTriggerScreen";
-import ProfileScreen from "./src/screens/ProfileScreen";
+import BreatheScreen from "./src/screens/BreatheScreen";
 import CalendarScreen from "./src/screens/CalendarScreen";
 
 const entireScreenWidth = Dimensions.get("window").width;
@@ -40,12 +40,12 @@ const CalendarStackNavigator = () => {
 
 export { CalendarStackNavigator }; // Stack-Navigator for CalendarScreen Tab
 
-const ProfileStackNavigator = () => {
+const BreatheStackNavigator = () => {
   return (
     <Stack.Navigator headerMode="none">
-      <Stack.Screen name="ProfileScreen" component={ProfileScreen} />
+      <Stack.Screen name="BreatheScreen" component={BreatheScreen} />
     </Stack.Navigator>
   );
 };
 
-export { ProfileStackNavigator }; // Stack-Navigator for UserScreen Tab
+export { BreatheStackNavigator }; // Stack-Navigator for BreatheScreen Tab

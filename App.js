@@ -12,7 +12,7 @@ import Orientation from "react-native-orientation";
 import {
   ReflectionStackNavigator,
   CalendarStackNavigator,
-  ProfileStackNavigator,
+  BreatheStackNavigator,
 } from "./CustomNavigation";
 
 const entireScreenWidth = Dimensions.get("window").width;
@@ -102,8 +102,8 @@ export default class App extends Component {
             }}
           />
           <Tab.Screen
-            name="ProfileNav"
-            component={ProfileStackNavigator}
+            name="BreatheNav"
+            component={BreatheStackNavigator}
             options={{
               tabBarLabel: ({ focused }) => {
                 return (
@@ -115,7 +115,7 @@ export default class App extends Component {
                         : styles.tabLabelUnfocused
                     }
                   >
-                    profile
+                    breathe
                   </Text>
                 );
               },
@@ -124,8 +124,8 @@ export default class App extends Component {
                   <Image
                     source={
                       focused
-                        ? require("./assets/icon_profile_selected.png")
-                        : require("./assets/icon_profile_unselected.png")
+                        ? require("./assets/icon_breathe_selected.png")
+                        : require("./assets/icon_breathe_unselected.png")
                     }
                     style={styles.tabBarIcon}
                   />
@@ -142,7 +142,7 @@ export default class App extends Component {
 const styles = EStyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#EDECD5",
+    backgroundColor: "#F7F8FF",
     alignItems: "center",
     justifyContent: "center",
   },
@@ -153,7 +153,7 @@ const styles = EStyleSheet.create({
     aspectRatio: 6.1 / 1.35,
     alignItems: "center",
     paddingTop: "20rem",
-    paddingBottom: "23rem",
+    paddingBottom: "20rem",
     borderTopLeftRadius: "22rem",
     borderTopRightRadius: "22rem",
     backgroundColor: "white",
@@ -174,7 +174,7 @@ const styles = EStyleSheet.create({
   tabBarIcon: {
     width: "80%",
     height: "auto",
-    marginBottom: "15rem",
+    marginBottom: "8rem",
     aspectRatio: 26 / 7,
     resizeMode: "contain",
   },
